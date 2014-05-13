@@ -16,3 +16,11 @@ save the undo file in it.
 
 This way, we avoid the length limit on filenames, and as an added bonus it
 makes pruning the undo folder much more easier.
+
+# Installation
+
+Just use [pathogen](https://github.com/tpope/vim-pathogen)
+
+# Notes
+
+You still need to enable `set undofile` for the plugin to kick in.
