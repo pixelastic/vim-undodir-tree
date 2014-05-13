@@ -44,14 +44,14 @@ function! s:WriteUndoFile()
   if !isdirectory(undodir)
     call mkdir(undodir, "p")
   endif
-  execute 'wundo ' . undofile
+  execute 'wundo ' . escape(undofile, ' ')
 endfunction
 
 " Read the undo file
 function s:ReadUndoFile()
   let undofile = s:GetUndoFile(expand('%:p'))
   if filereadable(undofile)
-    silent! execute 'rundo ' . undofile
+    silent! execute 'rundo ' . escape(undofile, ' ')
   endif
 endfunction
 
