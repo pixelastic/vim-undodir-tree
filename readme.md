@@ -19,7 +19,7 @@ makes pruning the undo folder much more easier.
 
 # Installation
 
-Just use [pathogen](https://github.com/tpope/vim-pathogen)
+Just use [pathogen](https://github.com/tpope/vim-pathogen).
 
 # Notes
 
